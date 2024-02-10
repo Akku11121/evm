@@ -1,1 +1,1 @@
-# evm
+This project is to demonstrate the working of EVM to make people aware about the process for casting their vote.
