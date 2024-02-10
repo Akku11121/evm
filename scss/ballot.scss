@@ -1,0 +1,33 @@
+table, tr, th, td{
+    border-collapse: collapse;
+}
+
+table {
+    width: 100%;
+}
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-weight: bolder;
+    font-size: medium;
+}
+
+td {
+
+    i {
+        size: 10rem;
+        font-weight: 150%;
+    }
+
+    .btn-rectangular {
+        background-color: blue;
+        border: 2rem;
+        color: white;
+        padding: 20px 52px;
+        text-align: center;
+        display: inline-block;
+        margin: 4px 2px;
+        border-radius: 12px;
+        position: relative;
+    }
+}
