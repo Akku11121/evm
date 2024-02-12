@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./scss/main.css">
+    <title>VVPAT</title>
+</head>
+<body>
+    <h1>VVPAT</h1>
+    <div class="vvpat" id="displayData"></div>
+    
+    <script>
+        // Retrieve the selected button value from sessionStorage
+        const selectedButton = sessionStorage.getItem('selectedButton').value;
+        const displayDataElement = document.getElementById('displayData');
+        
+        // Display the selected button value
+        if (selectedButton) {
+            displayDataElement.textContent = `Chosen Symbol: ${selectedButton}`;
+        } else {
+            displayDataElement.textContent = 'No button selected.';
+        }
+        displayDataElement.style.fontsize = '100px';
+    </script>
+   
+</body>
+</html>

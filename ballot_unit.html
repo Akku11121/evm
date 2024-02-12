@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content=""ie=edge>
-    <link rel="stylesheet" href="./scss/style.css">
+    <link rel="stylesheet" href="./scss/main.css">
     <title>EVM Machine Testing</title>
 </head>
 <body>
-    <!--Ballot Unit-->
-    <h5>Ballot Unit</h5>
+
+<!--Ballot Unit-->
+<div class="input-screen">
+    <div>
+        <h4>Ballot Unit</h4>
+        <button type="button" class="button">Ready</button>
+    </div>
     <table>
         <tr>
             <th>S No</th>
@@ -23,114 +28,128 @@
             <td>AAA</td>
             <td>α</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('α')"></button></td>
         </tr>
         <tr>
             <td>2</td>
             <td>BBB</td>
             <td>β</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('β')"></button></td>
         </tr>
         <tr>
             <td>3</td>
             <td>CCC</td>
             <td>χ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('χ')"></button></td>
         </tr>
         <tr>
             <td>4</td>
             <td>DDD</td>
             <td>δ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('δ')"></button></td>
         </tr>
         <tr>
             <td>5</td>
             <td>EEE</td>
             <td>ε</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('ε')"></button></td>
         </tr>
         <tr>
             <td>6</td>
             <td>FFF</td>
             <td>Φ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('Φ')"></button></td>
         </tr>
         <tr>
             <td>7</td>
             <td>GGG</td>
             <td>γ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('γ')"></button></td>
         </tr>
         <tr>
             <td>8</td>
             <td>HHH</td>
             <td>η</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('η')"></button></td>
         </tr>
         <tr>
             <td>9</td>
             <td>HI</td>
             <td>τ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('τ')"></button></td>
         </tr>
         <tr>
             <td>10</td>
             <td>JJJ</td>
             <td>φ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('φ')"></button></td>
         </tr>
         <tr>
             <td>11</td>
             <td>KKK</td>
             <td>κ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('κ')"></button></td>
         </tr>
         <tr>
             <td>12</td>
             <td>LLL</td>
             <td>λ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('λ')"></button></td>
         </tr>
         <tr>
             <td>13</td>
             <td>MMM</td>
             <td>μ</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('μ')"></button></td>
         </tr>
         <tr>
             <td>14</td>
             <td>NNN</td>
             <td>ν</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('ν')"></button></td>
         </tr>
         <tr>
             <td>15</td>
             <td>OOO</td>
             <td>Ο</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('Ο')"></button></td>
         </tr>
         <tr>
             <td>16</td>
             <td>None of these</td>
-            <td><i class="fas fa-notdef"></i></td>
+            <td>⊠</td>
             <td><i class="fas fa-left-long"></i></td>
-            <td><button type="button" class="btn-rectangular"></button></td>
+            <td><button type="button" class="btn-rectangular" onclick="castVote('⊠')"></button></td>
             </tr>
     </table>
+</div>
+
+<footer>
+    <h5>Election Commission of India</h5>
+</footer>
+   
+<!--Output Screen-->
+<div class="output-screen">
+  <h1>VVPAT</h1>
+  <div class="vvpat" id="displayData"></div>
+</div>
+
     <script src="https://kit.fontawesome.com/f3c403be80.js"></script>
+    <script src="main.js"></script>
+
 </body>
 </html>
